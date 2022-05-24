@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EduShare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="year.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    	<!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<!-- main css -->
+	
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+       
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDMd-024ETAuXIWyQ2oZJ5L7tOhtTbAxQI",
+            authDomain: "filesharingedi.firebaseapp.com",
+            databaseURL: "https://filesharingedi.firebaseio.com",
+            projectId: "filesharingedi",
+            storageBucket: "filesharingedi.appspot.com",
+            messagingSenderId: "478279119993",
+            appId: "1:478279119993:web:81b3fb7564a364d697d0a8",
+            measurementId: "G-17Z81NY340"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+
+           // Get a reference to the storage service, which is used to create references in your storage bucket
+          // var storage = firebase.storage();
+        </script>
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/edushare.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">home</a></li>
+                                        <li><a class="active" href="index1.html">Courses</a></li>
+                                        
+                                        <li><a href="Projects.html">Projects</a></li>
+
+                                        <li><a href="about.html">About</a></li>
+                                        
+                                        <li><a href="contact.html">Contact</a></li>
+                                        
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                  
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block"> 
+                            <div class="log_chat_area d-flex align-items-center" id="account">
+                                <li>
+                                    <a href="loginpage.html" class="boxed_btn_orange" id="loggedin">
+                                        <i class="flaticon-user"></i>
+                                        <span id="logbutton">Log In</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </div> 
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area ">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="row justify-content-center my-3 card course_element" style="width: 100%;"> 
+                        <div class="col-lg-12">
+                         <a onclick="check();" href="upload.html" class="card-link">Upload File</a>
+                        </div> 
+                    </div>   
+                    <section class="feature_area">
+                        <div class="container" style="margin-top: 2%;"> 
+                            <div class="row justify-content-end">
+                                <div class="col-lg-11">
+                                    <ul class="course_list">
+                                        <li>
+                                            <div class="row">
+                                                
+                                            </div>
+                                            <div class="card course_element" style="width:30em;">
+                                                <div>
+                                                    <a href="coursesList.html" onclick="StoreData('Data Structures');" class="card-link branch">
+                                                       Data Structures
+                                                    </a>  
+                                                </div>
+                                                                                            
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="card course_element" style="width:30em;">
+                                                <div>
+                                                    <a href="coursesList.html" onclick="StoreData('DBMS');" class="card-link branch">
+                                                        DBMS
+                                                    </a> 
+                                                </div>                                                                                            
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card course_element" style="width:30em;">
+                                                <div>
+                                                    <a href="coursesList.html" onclick="StoreData('Operating System');" class="card-link branch">
+                                                        Operating System
+                                                    </a>   
+                                                </div>                                                                                           
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card course_element" style="width:30em;">
+                                                <div>
+                                                    <a href="coursesList.html" onclick="StoreData('COAA');"class="card-link branch">
+                                                        COAA
+                                                    </a>   
+                                                </div>                                                                                           
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="card course_element" style="width:30em;">
+                                                <div>
+                                                    <a href="coursesList.html" onclick="StoreData('DAA');"class="card-link branch">
+                                                        DAA
+                                                    </a>   
+                                                </div>                                                                                           
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="index1.js"></script>
+    <script src="courses.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EduShare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+  <!--Fontawesome CDN-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<!--Custom styles-->
+<link rel="stylesheet" type="text/css" href="css/login.css">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="loginPage.css"> -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<body>
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <!-- <div id="login_div" class="main-div"> -->
+      <div class="card">
+        <div class="card-header">
+        <h3>Firebase Web login Example</h3>
+        </div>
+        <div class="card-body">
+          <div id="login_div" class="main-div">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+            <input style="width: 250px;" type="email" placeholder="Email" id="email_field" required />
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+              </div>
+            <input style="width: 250px;" type="password" placeholder="Password" id="password_field" required/>
+             </div>
+          <h5 style="color: aliceblue;">For registration fill rest of the details</h5>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-id-card"></i></span>
+            </div>     
+             <input style="width: 250px;" type="text" placeholder="Name" id="name">
+          </div>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-school"></i></span>
+            </div>  
+            <input style="width: 250px;" type="text" placeholder="Institute" id="institute">
+          </div>
+         
+          <div class="form-group">
+            <button class="btn login_btn" onclick="login()">Login</button>
+            <button class="btn login_btn" onclick="register()">Register</button>
+          </div>
+
+          </div>
+          
+        <!-- </div> -->
+
+         <div id="user_div" class="loggedin-div"> 
+          <h3>Welcome User</h3>
+          <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+          <button onclick="logout()">Logout</button>
+         </div> 
+          </div>
+   
+
+      </div>
+
+  </div>
+</div>
+ 
+<!---
+   <div id="login_div">
+    <form id="test-form" >
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>Sign in</h3>
+                <form >
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" id="email_field" placeholder="Enter email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" id="password_field" placeholder="Password">
+                        </div>
+                        <div class="col-xl-12">
+                            <button onclick="login()" class="boxed_btn_orange">Sign in</button>
+                        </div>
+                        <div class="col-xl-12">
+                            <button onclick="register()" class="boxed_btn_orange">Register</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="doen_have_acc">Don’t have an account? <a class="dont-hav-acc" href="#test-form2">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </form>
+</div>
+-->
+    <!-- <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+      </div> -->
+    <!-- form itself end -->
+        <!-- JS here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/ajax-form.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/scrollIt.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/nice-select.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/gijgo.min.js"></script>
+    
+        <!--contact js-->
+        <script src="js/contact.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/mail-script.js"></script>
+    
+        <script src="js/main.js"></script>
+    
+        <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+   -->
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDMd-024ETAuXIWyQ2oZJ5L7tOhtTbAxQI",
+      authDomain: "filesharingedi.firebaseapp.com",
+      databaseURL: "https://filesharingedi.firebaseio.com",
+      projectId: "filesharingedi",
+      storageBucket: "filesharingedi.appspot.com",
+      messagingSenderId: "478279119993",
+      appId: "1:478279119993:web:81b3fb7564a364d697d0a8",
+      measurementId: "G-17Z81NY340"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script src="loginpage.js"></script>
+
+</body>
+</html>

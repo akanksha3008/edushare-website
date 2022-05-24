@@ -1,0 +1,263 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EduShare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="manifest" href="site.webmanifest"> 
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="year.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+
+    <!-- header-start -->
+            <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+   -->
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDMd-024ETAuXIWyQ2oZJ5L7tOhtTbAxQI",
+      authDomain: "filesharingedi.firebaseapp.com",
+      databaseURL: "https://filesharingedi.firebaseio.com",
+      projectId: "filesharingedi",
+      storageBucket: "filesharingedi.appspot.com",
+      messagingSenderId: "478279119993",
+      appId: "1:478279119993:web:81b3fb7564a364d697d0a8",
+      measurementId: "G-17Z81NY340"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    
+
+  </script>
+
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/edushare.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a  href="index.html">Home</a></li>
+                                        <li><a href="index1.html">Courses</a></li>
+                                        
+                                        <li><a href="Projects.html">Projects</a></li>
+<!-- 
+                                        <li><a class="active" href="#">Account <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a class="active" href="profile.html">Profile</a></li>
+                                                <li><a href="download.html">Downloads</a></li>
+                                                <li><a href="upload.html">Uploads</a></li>
+                                            </ul>
+                                        </li>
+                                         -->
+                                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                                    </ul>
+                                </nav>                              
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block"> 
+                            <div class="log_chat_area d-flex align-items-center" id="loggedin">
+                                <!-- <li>
+                                    <a href="#test-form" class="login popup-with-form">
+                                        <i class="flaticon-user"></i>
+                                        <span>log in</span>
+                                    </a>
+                                </li> -->
+                                <!-- <li>
+                                    <div class="live_chat_btn">
+                                        <button onclick="logout()" class="boxed_btn_orange" style="padding-left:60px;padding-right: 60px; font-size: 18px; ">
+                                            <span>Logout</span>
+                                        </button>
+                                    </div>
+                                </li>                              -->
+                            </div>
+                        </div> 
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area ">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="illastrator_png">
+                            <img src="img/banner/edu_ilastration.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                         <div class="slider_info" style="margin-left: 160px;">
+                            <form>
+
+                                <h4 class="profile_details" style="float:left;">Name: </h4>
+                                <h4 class="name profile_details" style="margin-left:4em;" id="current_user"></h4>
+                                <br>   
+                                <h4 class="profile_details" style="float:left;">Institute: </h4>
+                                <h4 class="profile_details" style="margin-left:5em;" id="inst_name"></h4>
+                                <br>  
+                                <h4  class="profile_details" style="float: left;">Points: </h4>
+                                <h4 class="points profile_details" style="margin-left: 4em;">
+                                    <span>
+                                        <img style="margin-left: 1em; margin-right: 0.24em;" src="favicon_io/favicon-16x16.png">
+                                    </span>
+                                <span id="points"></span>
+                                </h4>
+                                <br> 
+                                <h4  class="profile_details" style="float: left;">Downloads: </h4>
+                                <h4 class="profile_details" style="margin-left: 6.5em;" id="downloads"></h4>
+                                <br> 
+                                <h4  class="profile_details" style="float: left;">Uploads: </h4>
+                                <h4 class="profile_details" style="margin-left: 5em;" id="uploads"></h4>
+                                <br>           
+                            </form>
+                        </div> 
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- form itself end-->
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>Sign in</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" placeholder="Enter email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_orange">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="doen_have_acc">Don’t have an account? <a class="dont-hav-acc" href="#test-form2">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+    <!-- form itself end-->
+    <form id="test-form2" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>Resistration</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" placeholder="Enter email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="Password" placeholder="Confirm password">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_orange">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="index1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EduShare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginPage.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+<body>
+<div align="center">
+<form >
+                    <div class="row">
+                    <div class="col-xl-12 col-md-12">
+                            <input type="text" id="ruser_field" placeholder="Enter UserName">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="text" id="rinst_field" placeholder="Enter Instituute">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" id="email_field" placeholder="Enter email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" id="password_field" placeholder="Password">
+                        </div>
+                        
+                        <div class="col-xl-12">
+                            <button onclick="register()" class="boxed_btn_orange">Register</button>
+                        </div>
+                    </div>
+                </form>
+  </div>
+
+<!---
+   <div id="login_div">
+    <form id="test-form" >
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>Sign in</h3>
+                <form >
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" id="email_field" placeholder="Enter email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" id="password_field" placeholder="Password">
+                        </div>
+                        <div class="col-xl-12">
+                            <button onclick="login()" class="boxed_btn_orange">Sign in</button>
+                        </div>
+                        <div class="col-xl-12">
+                            <button onclick="register()" class="boxed_btn_orange">Register</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="doen_have_acc">Don�t have an account? <a class="dont-hav-acc" href="#test-form2">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </form>
+</div>
+-->
+   
+    <!-- form itself end -->
+        <!-- JS here -->
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/ajax-form.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/scrollIt.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/nice-select.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/gijgo.min.js"></script>
+    
+        <!--contact js-->
+        <script src="js/contact.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/mail-script.js"></script>
+    
+        <script src="js/main.js"></script>
+    
+        
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+<script>
+
+// Initialize Cloud Firestore through Firebase
+var firebaseConfig = {
+        apiKey: "AIzaSyDMd-024ETAuXIWyQ2oZJ5L7tOhtTbAxQI",
+        authDomain: "filesharingedi.firebaseapp.com",
+        databaseURL: "https://filesharingedi.firebaseio.com",
+        projectId: "filesharingedi",
+        storageBucket: "filesharingedi.appspot.com",
+        messagingSenderId: "478279119993",
+        appId: "1:478279119993:web:81b3fb7564a364d697d0a8",
+        measurementId: "G-17Z81NY340"
+      };
+       firebase.initializeApp(firebaseConfig);
+
+    var db = firebase.firestore();
+function register(){
+	alert("Before");
+
+db.collection("users").add({
+    first: "Ada",
+    last: "Lovelace",
+    born: 1815
+})
+.then(function(docRef) {
+    console.log("Document written with ID: ", docRef.id);
+    alert("After");
+})
+.catch(function(error) {
+    console.error("Error adding document: ", error);
+});
+} 
+
+  </script>
+
+
+
+
+
+</body>
+</html>

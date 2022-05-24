@@ -1,0 +1,82 @@
+
+#fy{
+    background-image: linear-gradient(to right,#ffd3b6, rgba(255,165,0,1));
+
+}
+
+#sy{
+
+    background-image: linear-gradient(to right, rgba(127,255,0,1),#baf1a1);
+}
+
+#ty
+{
+    /* background-image: linear-gradient(to right, #D7DDE8,#4776E6);  */
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+.list-element{
+    margin-top: 2em;
+}
+
+.pagination{
+    margin:auto 37%;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  .project_element{
+      text-align: center;
+    color: seashell;
+    background: rgba(255, 255, 255, 0);
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: bolder;
+    border-radius: 1em;
+    margin-top: 1em;
+    
+}
+
+ .project_element a{
+    color: seashell;
+}
+.project_element :hover{
+
+    background: rgba(255,255,255,1);
+    color: blueviolet;
+    border-radius: 1em;
+    font-size: 18px;   
+}
+
+.course_element{
+    text-align: center;
+    line-height: normal; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bolder;
+    border-radius: 1em;
+    margin-top: 2em;
+}
+.course_element :hover{
+    background: rgba(255,255,255,1);
+    color: blueviolet;
+    border-radius: 1em;
+    font-size: 18px;   
+}
+ 
+.profile_details{
+    /* font-size: x-large; */
+    color: cornsilk;
+}

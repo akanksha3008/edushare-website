@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EduShare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" href="">
+    <!-- CSS here -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body{
+            background-color: #95389e; 
+       }
+        a:hover{
+            font-size: larger;
+        }
+
+        #headingFiles{
+            background-color: aliceblue;
+            font-size: large;
+            border-radius: 1em;
+           
+            margin: auto;
+            width: 100%;
+        }
+        #headingFiles:hover{
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        #navigation{
+            
+            font-family: 'Baloo Paaji 2', cursive;
+             font-size: x-large;
+             font-weight:500;
+        }
+    </style>
+</head>
+
+<body>
+
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDMd-024ETAuXIWyQ2oZJ5L7tOhtTbAxQI",
+            authDomain: "filesharingedi.firebaseapp.com",
+            databaseURL: "https://filesharingedi.firebaseio.com",
+            projectId: "filesharingedi",
+            storageBucket: "filesharingedi.appspot.com",
+            messagingSenderId: "478279119993",
+            appId: "1:478279119993:web:81b3fb7564a364d697d0a8",
+            measurementId: "G-17Z81NY340"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+
+        </script>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #95389e;">
+  <a class="navbar-brand" href="index.html">
+    <img src="img/edushare.svg" alt="">
+  </a> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="navigation">
+      <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="active nav-link" style="color: aliceblue;" href="index1.html">Courses</a></li>
+      <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="Projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: aliceblue;" href="contact.html">Contact</a></li>
+
+    </ul>   
+     <div class="col-xl-3 col-lg-3 d-none d-lg-block"> 
+                            <div class="log_chat_area d-flex align-items-center" id="account">
+                                <li>
+                                    <a href="loginpage.html" class="boxed_btn_orange" id="loggedin">
+                                        <i class="flaticon-user"></i>
+                                        <span id="logbutton">Log In</span>
+                                    </a>
+                                </li>
+                            </div>
+   </div>  
+  </div>
+  
+</nav>
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center">
+
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="d-none">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html" style="color:black;">Home</a></li>
+                                        <li><a class="active" href="index1.html">Courses</a></li>
+                                        
+                                        <li><a href="Projects.html">Projects</a></li>
+
+                                        <li><a href="about.html">About</a></li>
+                                        
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>                              
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                                <div class="container">
+                                
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+ <div class="row container justify-content-center my-3" id="headingFiles">
+    
+ </div>
+            <div class="container my-5">
+                <div class="row align-items-center justify-content-center">
+                    <table class="table table-hover" id="List">
+                        <thead style="color:white; font-family: 'Crimson Text', serif; font-size:1.5em">
+                           
+                            <th>Filename</th>
+                            <th>Size(in KBs)</th>
+                            <th>Downloads</th>
+                            <th>Author</th>
+                            <th>Description</th>
+                            <th>Feedback</th>
+                        </thead>
+                        <tbody style="color:white; font-size:1.2em;">
+                        
+                        </tbody>
+                </table>
+                </div>
+            </div>
+
+    <!-- JS here -->
+    
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="firebase.js" charset="utf-8"></script>
+    <script src="index1.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
